@@ -9,14 +9,14 @@
 /* Estilos gerais da página */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f7f6;
+    background-color: #000000;
     color: #333;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #005a8e;
+    color: #f8fafc;
 }
 
 h2, h3 {
@@ -57,7 +57,7 @@ input[type="number"] {
 }
 
 button {
-    background-color: #005a8e;
+    background-color: #017c12;
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -68,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #003f6b;
+    background-color: #66f108;
 }
 
 /* Estilos dos resultados */
@@ -80,7 +80,7 @@ p {
 
 span {
     font-weight: bold;
-    color: #005a8e;
+    color: #66f108;
 }
 
 .resultadoTotal {
@@ -88,7 +88,7 @@ span {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    color: #e74c3c;
+    color: #fcf9f9;
 }
 
 /* Responsividade para telas pequenas */
@@ -105,4 +105,23 @@ span {
     p {
         font-size: 16px;
     }
+}
+
+.Valores{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ValorText{
+    font-size: 16px;
+    color: #f8f4f4;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.TotaisExtra{
+    margin: 10px;
+    color: #fdfdfd;
 }
