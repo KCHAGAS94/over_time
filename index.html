@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Hora Extra</title>
+</head>
+<body>
+    <h1>Cálculo de Hora Extra</h1>
+
+    <form id="calculoForm">
+        <label for="salario">Salário Mensal: </label>
+        <input type="number" id="salario" required><br><br>
+
+        <label for="horasTrabalhadas">Horas Trabalhadas por Mês: </label>
+        <input type="number" id="horasTrabalhadas" required><br><br>
+
+        <!-- Horas extras e percentuais -->
+        <h3>Horas Extras com Diferentes Percentuais:</h3>
+
+        <label for="horasExtras50">Horas Extras (50%): </label>
+        <input type="number" id="horasExtras50" required><br><br>
+
+        <label for="horasExtras70">Horas Extras (70%): </label>
+        <input type="number" id="horasExtras70" required><br><br>
+
+        <label for="horasExtras100">Horas Extras (100%): </label>
+        <input type="number" id="horasExtras100" required><br><br>
+
+        <button type="button" onclick="calcularHoraExtra()">Calcular</button>
+    </form>
+
+    <h2>Valor a Receber por Cada Faixa de Hora Extra:</h2>
+    <p>Hora Extra (50%): <span id="resultado50">R$ 0,00</span></p>
+    <p>Hora Extra (70%): <span id="resultado70">R$ 0,00</span></p>
+    <p>Hora Extra (100%): <span id="resultado100">R$ 0,00</span></p>
+
+    <h3>Soma Total de Horas Extras: <span id="resultadoTotal">R$ 0,00</span></h3>
+
+    <script>
+        function calcularHoraExtra() {
+            // Pega os valores dos campos
+            const salario = parseFloat(document.getElementById('salario').value);
+            const horasTrabalhadas = parseFloat(document.getElementById('horasTrabalhadas').value);
+            const horasExtras50 = parseFloat(document.getElementById('horasExtras50').value);
+            const horasExtras70 = parseFloat(document.getElementById('horasExtras70').value);
+            const horasExtras100 = parseFloat(document.getElementById('horasExtras100').value);
+
+            // Verifica se todos os campos estão preenchidos corretamente
+            if (salario && horasTrabalhadas && horasExtras50 >= 0 && horasExtras70 >= 0 && horasExtras100 >= 0) {
+                // Cálculo da hora normal
+                const valorHoraNormal = salario / horasTrabalhadas;
+
+                // Cálculo da hora extra de 50%, 70% e 100%
+                const valorHoraExtra50 = valorHoraNormal * 1.50; // 50% extra
+                const valorHoraExtra70 = valorHoraNormal * 1.70; // 70% extra
+                const valorHoraExtra100 = valorHoraNormal * 2.00; // 100% extra
+
+                // Calcula os valores das horas extras
+                const total50 = valorHoraExtra50 * horasExtras50;
+                const total70 = valorHoraExtra70 * horasExtras70;
+                const total100 = valorHoraExtra100 * horasExtras100;
+
+                // Exibe os resultados individuais
+                document.getElementById('resultado50').textContent = `R$ ${total50.toFixed(2)}`;
+                document.getElementById('resultado70').textContent = `R$ ${total70.toFixed(2)}`;
+                document.getElementById('resultado100').textContent = `R$ ${total100.toFixed(2)}`;
+
+                // Exibe o total geral
+                const totalGeral = total50 + total70 + total100;
+                document.getElementById('resultadoTotal').textContent = `R$ ${totalGeral.toFixed(2)}`;
+            } else {
+                alert('Por favor, preencha todos os campos corretamente.');
+            }
+        }
+    </script>
+</body>
+</html>
