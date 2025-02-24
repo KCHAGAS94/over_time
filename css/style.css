@@ -139,6 +139,7 @@ span {
     width: 100%; /* Garante que ocupe toda a largura da tela */
     font-size: 14px; /* Diminui o tamanho do texto */
     position: relative; /* Garante que ocupe 100% da largura */
+    
 }
 
 .footerText h3 {
@@ -159,5 +160,24 @@ span {
     padding: 20px;
 }
 
+.sobreSite  {
+    color: #66f108;
+    font-size: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.sobreSite p {
+    font-size: 120%; /* Tamanho do texto do parágrafo */
+    color: #f8f4f4;
+}
 
 
+.sobreSite h1{
+    color:  #66f108;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}

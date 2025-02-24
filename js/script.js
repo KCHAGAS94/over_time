@@ -31,13 +31,13 @@ function calcularHoraExtra() {
     // Soma total das horas extras
     const totalExtras = total50 + total70 + total100;
 
-    // Definição interna de domingos e feriados para cada mês (ajustável no código)
+    // Esse código está manualmente definindo os domingos e feriados
     const domingosFeriados = {
         1: 5, 2: 4, 3: 5, 4: 6, 5: 7, 6: 5,
         7: 4, 8: 5, 9: 5, 10: 5, 11: 8, 12: 5
     };
 
-    // Definição do número total de dias do mês
+    // Esse código está manualmente definindo os dias do mês
     const diasNoMes = {
         1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30,
         7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31
