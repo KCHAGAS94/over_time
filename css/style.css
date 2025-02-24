@@ -12,6 +12,9 @@ body {
     background-color: #000000;
     color: #333;
     padding: 20px;
+    /* display: flex; */
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
 }
 
 h1 {
@@ -135,11 +138,8 @@ span {
     padding: 50px 10px 10px 10px; /* Espaçamento interno */
     width: 100%; /* Garante que ocupe toda a largura da tela */
     font-size: 14px; /* Diminui o tamanho do texto */
-    bottom: 0; /* Fixa o footer no fundo da página */
-    left: 0; /* Alinha o footer ao lado esquerdo */
+    position: relative; /* Garante que ocupe 100% da largura */
 }
-
-
 
 .footerText h3 {
     font-size: 80%; /* Tamanho do texto dos títulos */
