@@ -128,7 +128,7 @@ span {
 }
 
 .footerText {
-    background-color: #09fd0d;
+    background-color: #4d4d4d;
     text-align: center;
     padding: 50px 10px 10px 10px;
     margin: auto;
@@ -138,10 +138,12 @@ span {
 
 .footerText h3 {
     font-size: 80%; /* Tamanho do texto dos títulos */
+    color: #f8f4f4;
 }
 
 .footerText p {
     font-size: 80%; /* Tamanho do texto do parágrafo */
+    color: #f8f4f4;
 }
 
 
