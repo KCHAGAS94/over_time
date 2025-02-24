@@ -33,3 +33,35 @@ No HOTLINKING is allowed i.e. you cannot make a direct link to the download or/a
 
 Concerning blog posts, you are free to link to it from any website, 
 but you cannot however publish it as it is, without prior consent from http://bootstrapthemes.co
+
+
+Sobre o Site - Cálculo de Hora Extra
+Este site foi desenvolvido para ajudar trabalhadores a calcularem, de forma simples e rápida, o valor das suas horas extras. 
+Sabemos que muitas pessoas têm dificuldades para entender como esse cálculo funciona, então criamos uma ferramenta intuitiva 
+que faz todo o trabalho para você.
+
+
+Como Funciona?
+Para calcular o valor das suas horas extras, siga estes passos:
+
+Selecione o mês trabalhado;
+Isso é importante para considerar corretamente os domingos e possíveis feriados.
+
+Informe o seu salário mensal;
+O sistema usará esse valor para calcular o valor da sua hora normal.
+
+Digite a quantidade de horas trabalhadas no mês;
+ Isso ajuda a determinar o valor da sua hora de trabalho.
+
+Informe a quantidade de horas extras realizadas;
+ Separe as horas extras conforme os percentuais de acréscimo: 50%, 70% e 100%.
+
+Clique no botão "Calcular";
+O site processará as informações e mostrará o valor das horas extras e o adicional referente ao Descanso Semanal Remunerado (DSR).
+
+Objetivo do Site
+O principal objetivo deste site é fornecer um cálculo preciso e transparente das horas extras trabalhadas, ajudando os usuários a 
+terem mais controle sobre seus ganhos. Dessa forma, você pode conferir se os valores pagos pelo seu empregador estão corretos, 
+evitando erros ou prejuízos financeiros.
+
+Este é um projeto criado por Kenedy Chagas, buscando oferecer uma solução prática e acessível para trabalhadores de diversas áreas.
