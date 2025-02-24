@@ -89,6 +89,7 @@ span {
     text-align: center;
     font-weight: bold;
     color: #fcf9f9;
+    padding: 0px 90px 90px 90px;
 }
 
 /* Responsividade para telas pequenas */
@@ -125,3 +126,23 @@ span {
     margin: 10px;
     color: #fdfdfd;
 }
+
+.footerText {
+    background-color: #09fd0d;
+    text-align: center;
+    padding: 50px 10px 10px 10px;
+    margin: auto;
+    width: 100%;
+    font-size: 14px; /* Diminui o tamanho do texto */
+}
+
+.footerText h3 {
+    font-size: 80%; /* Tamanho do texto dos títulos */
+}
+
+.footerText p {
+    font-size: 80%; /* Tamanho do texto do parágrafo */
+}
+
+
+
