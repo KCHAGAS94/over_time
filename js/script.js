@@ -33,17 +33,21 @@ function calcularHoraExtra() {
 
     // Definição interna de domingos e feriados para cada mês (ajustável no código)
     const domingosFeriados = {
-        1: 5, 2: 4, 3: 5, 4: 6, 5: 7, 6: 4,
-        7: 4, 8: 4, 9: 5, 10: 4, 11: 5, 12: 5
+        1: 5, 2: 4, 3: 5, 4: 6, 5: 7, 6: 5,
+        7: 4, 8: 5, 9: 5, 10: 5, 11: 8, 12: 5
     };
 
     // Definição do número total de dias do mês
-    const diasNoMes = new Date(2025, mes, 0).getDate();
-    const diasUteis = diasNoMes - domingosFeriados[mes]; // Dias úteis no mês
+    const diasNoMes = {
+        1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30,
+        7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31
+    };
+
+    const diasUteis = diasNoMes[mes] - domingosFeriados[mes]; // Agora acessa corretamente os dias do mês
 
     // Cálculo do DSR sobre horas extras
-    // const dsr = (totalExtras * domingosFeriados[mes]) / diasUteis;
-    const dsr = (totalExtras / diasUteis)* domingosFeriados[mes];
+    const dsr = (totalExtras * domingosFeriados[mes]) / diasUteis;
+    // const dsr = (totalExtras / diasUteis)* domingosFeriados[mes];
 
     // Atualiza os valores na página
     document.getElementById('resultado50').textContent = `R$ ${total50.toFixed(2)}`;
