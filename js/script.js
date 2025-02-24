@@ -33,7 +33,7 @@ function calcularHoraExtra() {
 
     // Definição interna de domingos e feriados para cada mês (ajustável no código)
     const domingosFeriados = {
-        1: 5, 2: 4, 3: 4, 4: 4, 5: 5, 6: 4,
+        1: 5, 2: 4, 3: 4, 4: 4, 5: 7, 6: 4,
         7: 4, 8: 4, 9: 5, 10: 4, 11: 5, 12: 5
     };
 
