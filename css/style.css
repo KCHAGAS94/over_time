@@ -26,7 +26,7 @@ h2, h3 {
 
 h3 {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 100%;
     color: #555;
 }
 
@@ -44,7 +44,7 @@ label {
     font-weight: bold;
     display: block;
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 100%;
 }
 
 input[type="number"] {
@@ -53,7 +53,7 @@ input[type="number"] {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 100%;
 }
 
 button {
@@ -73,7 +73,7 @@ button:hover {
 
 /* Estilos dos resultados */
 p {
-    font-size: 18px;
+    font-size: 100%;
     margin-bottom: 10px;
     color: #333;
 }
@@ -84,7 +84,7 @@ span {
 }
 
 .resultadoTotal {
-    font-size: 22px;
+    font-size: 100%;
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
@@ -100,11 +100,11 @@ span {
     }
 
     button {
-        font-size: 14px;
+        font-size: 100%;
     }
 
     p {
-        font-size: 16px;
+        font-size: 100%;
     }
 }
 
@@ -115,7 +115,7 @@ span {
 }
 
 .ValorText{
-    font-size: 16px;
+    font-size: 100%;
     color: #f8f4f4;
     display: flex;
     justify-content: center;
@@ -127,14 +127,19 @@ span {
     color: #fdfdfd;
 }
 
+
 .footerText {
-    background-color: #4d4d4d;
-    text-align: center;
-    padding: 50px 10px 10px 10px;
-    margin: auto;
-    width: 100%;
+    background-color: #4d4d4d; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 50px 10px 10px 10px; /* Espaçamento interno */
+    width: 100%; /* Garante que ocupe toda a largura da tela */
     font-size: 14px; /* Diminui o tamanho do texto */
+    bottom: 0; /* Fixa o footer no fundo da página */
+    left: 0; /* Alinha o footer ao lado esquerdo */
 }
+
+
 
 .footerText h3 {
     font-size: 80%; /* Tamanho do texto dos títulos */
@@ -148,7 +153,7 @@ span {
 
 .TituloCabeçalho{
     color: #fdf8f8;
-    font-size: 30px;
+    font-size: 200%;
     text-align: center;
     margin-top: 10px;
     padding: 20px;
