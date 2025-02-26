@@ -53,22 +53,14 @@ function calcularHoraExtra() {
     document.getElementById('resultado50').textContent = `R$ ${total50.toFixed(2)}`;
     document.getElementById('resultado70').textContent = `R$ ${total70.toFixed(2)}`;
     document.getElementById('resultado100').textContent = `R$ ${total100.toFixed(2)}`;
-    document.getElementById('resultadoTotal').textContent = `R$ ${totalExtras.toFixed(2)}`;
+    document.getElementById('resultadoTotal').textContent = `R$ ${(totalExtras).toFixed(2)}`;
 
     // Exibir o DSR sobre horas extras na página
-    let dsrElemento = document.getElementById('dsrTotal').textContent = `R$ ${dsr.toFixed(2)}`;
+    let dsrElemento = document.getElementById('dsrTotal');
     if (!dsrElemento) {
         let dsrContainer = document.querySelector('.resultadoTotal');
         dsrContainer.innerHTML += `<br><br> DSR sobre Horas Extras: <span id="dsrTotal">R$ ${dsr.toFixed(2)}</span>`;
     } else {
         dsrElemento.textContent = `R$ ${dsr.toFixed(2)}`;
     }
-
-    // Soma total de horas extras + DSR
-    const totalComDSR = totalExtras + dsr;
-
-    // Atualiza o valor total incluindo o DSR
-    document.getElementById('somaTotalDsr').textContent = `R$ ${totalComDSR.toFixed(2)}`;
-
-
 }
